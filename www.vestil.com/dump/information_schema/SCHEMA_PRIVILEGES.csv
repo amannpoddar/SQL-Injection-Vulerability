@@ -1,0 +1,20 @@
+GRANTEE,IS_GRANTABLE,TABLE_SCHEMA,TABLE_CATALOG,PRIVILEGE_TYPE
+'vestil-prod'@'localhost',NO,vestilprod,def,SELECT
+'vestil-prod'@'localhost',NO,vestilprod,def,INSERT
+'vestil-prod'@'localhost',NO,vestilprod,def,UPDATE
+'vestil-prod'@'localhost',NO,vestilprod,def,DELETE
+'vestil-prod'@'localhost',NO,vestilprod,def,CREATE
+'vestil-prod'@'localhost',NO,vestilprod,def,DROP
+'vestil-prod'@'localhost',NO,vestilprod,def,REFERENCES
+'vestil-prod'@'localhost',NO,vestilprod,def,INDEX
+'vestil-prod'@'localhost',NO,vestilprod,def,ALTER
+'vestil-prod'@'localhost',NO,vestilprod,def,CREATE TEMPORARY TABLES
+'vestil-prod'@'localhost',NO,vestilprod,def,LOCK TABLES
+'vestil-prod'@'localhost',NO,vestilprod,def,EXECUTE
+'vestil-prod'@'localhost',NO,vestilprod,def,CREATE VIEW
+'vestil-prod'@'localhost',NO,vestilprod,def,SHOW VIEW
+'vestil-prod'@'localhost',NO,vestilprod,def,CREATE ROUTINE
+'vestil-prod'@'localhost',NO,vestilprod,def,ALTER ROUTINE
+'vestil-prod'@'localhost',NO,vestilprod,def,EVENT
+'vestil-prod'@'localhost',NO,vestilprod,def,TRIGGER
+
